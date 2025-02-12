@@ -1,0 +1,298 @@
+Technical Component and Requirement Model
+
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models.
+
+Technical Component and Requirement Modell Purpose:
+
+- The purpose of the technical components and requirements model (TKAM) is to define and document the structure and properties of information systems within an enterprise context. 
+- It integrates business goals and processes to specify functional and non-functional requirements for current and future IT systems. 
+- TKAM facilitates the design and implementation of IT architectures that align with organizational objectives and support efficient business operations.
+
+Components:
+
+- Definition: Functional requirements define the desired behavior or functionality of a system or component. Technical components represent tangible parts or modules within a system that contribute to fulfilling these requirements.
+- AND Relationships: Connect multiple technical components as parents in a sequence, ensuring all connected components must be completed or available before proceeding.
+- OR Relationships: Link technical components where at least one must be completed or available to proceed.
+- Supports: Indicates that one concept or component enhances or facilitates another.
+Hinders
+
+
+
+Learn the following Syntax for the Technical Component and Requirement Modell Purpose:
+
+This is a sample of the Header for the code syntax. A header must be displayed before the components:
+
+VERSION <5.1>
+BUSINESS PROCESS MODEL <Technical Components and Requirements Model - new> : <2021_04_22_4EM-Rostock Library_87>
+VERSION <>
+TYPE <Technical Components and Requirements Model>
+
+From here the Components can be displayed. There are some Components given to learn the syntax of these components. The structure is INSTANCE <Name> : <Type> . 
+
+This is a Syntax Example for the technical Component:
+INSTANCE <IS Technical Component - 1> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:16cm y:2.5cm w:4cm h:2cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+This is a sample of the Requirement Component:
+INSTANCE <IS Requirement - 1> : <IS Requirement>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:2.5cm y:8cm w:4cm h:2cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Functional"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+This is a sample of the AND Component:
+INSTANCE <AND-18417> : <AND>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:6.5cm y:9.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+This is a sample of the OR Component:
+INSTANCE <OR-18420> : <OR>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:11.5cm y:11.5cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+These are many  Examples for Relation Components:
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 3> : <IS Technical Component>
+	TO <AND-18503> : <AND>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:5"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <IS Requirement - 3> : <IS Requirement>
+	TO <AND-18503> : <AND>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:6"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <AND-18503> : <AND>
+	TO <IS Technical Component - 4> : <IS Technical Component>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:7"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <AND-18509> : <AND>
+	TO <IS Requirement - 4> : <IS Requirement>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:15"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <OR-18512> : <OR>
+	TO <IS Requirement - 5> : <IS Requirement>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:18"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <OR-18512> : <OR>
+	TO <IS Requirement - 3> : <IS Requirement>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:20"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 5> : <IS Technical Component>
+	TO <AND-18509> : <AND>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:16"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 5> : <IS Technical Component>
+	TO <OR-18512> : <OR>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:19"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 6> : <IS Technical Component>
+	TO <OR-18512> : <OR>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:17"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <IS Requirement - 5> : <IS Requirement>
+	TO <AND-18509> : <AND>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:14"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+
+Now you have learned the Language for creating models.
+
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet:
+
+Components:
+Information System (TK 1)
+Database System (TK 2)
+E-Shop System (TK 3)
+Product Catalog Search System (TK 3.1)
+Order System (TK 3.2)
+Customer Service (TK 3.3)
+Checkout System (TK 4)
+Production System (TK 5)
+POS System (TK 6)
+Inventory System (TK 7)
+Relationships:
+Support Relationships:
+
+Production System (TK 5) supports Inventory System (TK 6):
+Ensures stock values are updated after production processes.
+POS System (TK 4) supports Inventory System (TK 6):
+Ensures stock values are updated after sales.
+Hindered Relationships:
+
+MDE Device (TK 7) hinders Inventory System (TK 6):
+The outdated MDE device negatively impacts daily operations related to inventory management.
+Functional Requirements:
+POS System (TK 4):
+
+Functional Requirement 3: Ability to create a customer profile when placing an online order.
+E-Shop System (TK 3):
+
+Functional Requirements (implicitly defined for TK 3.1, TK 3.2, TK 3.3):
+Product catalog search system (TK 3.1) for quick product search.
+Order system (TK 3.2) for online ordering.
+Customer service (TK 3.3) for providing customer support.
+Non-Functional Requirements:
+POS System (TK 4):
+Non-Functional Requirement 1: Customers must be logged in to buy online.
+Conceptual Relationships (Supports/Hinders):
+Supports:
+
+Production System (TK 5) supports Inventory System (TK 6).
+POS System (TK 4) supports Inventory System (TK 6).
+Hinders:
+
+MDE Device (TK 7) hinders Inventory System (TK 6).
+Component Relationships:
+Information System (TK 1):
+
+Parent component consisting of TK 2, TK 3, TK 4, TK 5, TK 6.
+E-Shop System (TK 3):
+
+Includes TK 3.1, TK 3.2, TK 3.3.
+This breakdown covers the technical components, their relationships (supporting and hindering), and specified functional and non-functional requirements relevant to the IT system of "Accessoires4you". These components and relationships help define the structure and operational dependencies within their e-commerce setup.
