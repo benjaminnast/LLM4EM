@@ -1,0 +1,15 @@
+Scenario version 1: minimal
+Our company develops and manufactures heat pumps for family homes. The goal of the company is to provide the most energy-efficient heating solution on the market. The problem that hinders reaching this goal is that the energy consumption of the current product version is too high.  
+In the company, the role of the product owner for the heat pump “Smart-Heat” is responsible for the product innovation process and also has the responsibility for reaching the goal of the most energy-efficient heating solution. The product owner is part of the product development department.
+The product innovation process starts with the sub-process of target setting, which receives the customer survey as input information and produces the list of target features as output information. The target feature list is the input for the next sub-process, which is to define the product specification. This sub-process has the specification document as output and is the last step in the innovation process. The product owner performs the target setting and the product specification sub-process.
+The technical components supporting the product innovation process are the production system and the version management system. The version management system supports the production system.
+The “Smart-Heat” product consists of two components: the indoor module and the outdoor module. Smart-Heat has the feature of being energy-efficient.
+Important concepts we have to understand are
+    • Energy-efficiency: is calculated as the energy output for heating divided by the energy consumption
+    • Energy consumption: is measured in kilowatt-hours (kWh) per year
+    • Customer survey: summarizes what expectations the customers have regarding the next version of the company products
+    • Feature: is a characteristic of the product visible for the customer
+    • Target feature: is a feature to be implemented in the next version of the product
+    • Specification document: is defining the functional and non-functional characteristics to be achieved by a product
+
+

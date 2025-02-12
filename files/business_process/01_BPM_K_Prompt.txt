@@ -232,7 +232,7 @@ INSTANCE <Split (AND)-16378> : <Split (AND)>
 
 //END
 
-These are many Examples for RELATION <4EM_Relation> Components:
+These are Examples for RELATION <4EM_Relation> Components:
 
 RELATION <4EM_Relation>
 	FROM <External Process - 1> : <External Process>
@@ -253,39 +253,3 @@ Now you have learned the Language for creating models.
 
 
 Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario:
-
-
-Actors and Resources Model Outcome
-Actors:
-Individual
-Organizational Unit
-Non-human Resource
-Role
-Concepts and Relationships:
-Offline and Online Marketing:
-Actors Involved: Marketing Department (Organizational Unit), Marketing Personnel (Individuals)
-Relationship: Marketing Department engages in both offline and online marketing activities to promote products.
-Customer Decision Process:
-Actors Involved: Customer (Individual)
-Processes Involved: Consultation with Store Employee (Role 3), Product Catalog Search in E-shop (Process 2)
-Information Flow: Updates Managed by IT Employees (Role 1) (Process 1, Information Flow 1)
-Relationships:
-Customer interacts with Role 3 (Store Employee) for consultation.
-Customer interacts with Role 1 (IT Employee) for managing e-shop updates.
-Order Placement Process:
-Processes Involved: Online Order Placement (Process 3)
-Information Flow: Customer Profile (Process 24, Information Flow 11)
-Relationships:
-Customer places online order after deciding on a product.
-Customer Profile Setup:
-Processes Involved: Account Setup (Process 23, sub-processes)
-Information Flow: Customer Information (Name, Address, Payment Methods) (Information Flow 33, sub-flows 33.1, 33.2, 33.3)
-Relationships:
-Customer must provide and verify personal information for account setup (Processes 23.2, 23.3, 23.4).
-Product Delivery Process:
-Processes Involved: Shipping Order (Information Flow 3)
-Relationships:
-Foreman (Role) arranges delivery with Shipping Service Provider (Non-human Resource).
-Long-term Contract with Shipping Service Providers:
-Relationships:
-Company aims to establish long-term contracts with Shipping Service Providers (Non-human Resources) for regular and scheduled pickups.

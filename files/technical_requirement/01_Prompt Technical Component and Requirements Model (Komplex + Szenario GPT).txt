@@ -98,7 +98,8 @@ INSTANCE <OR-18420> : <OR>
 	ATTRIBUTE <External tool coupling>
 	VALUE ""
 
-These are many  Examples for RELATION <4EM_Relation> Components:
+These are many Examples for RELATION <4EM_Relation> Components:
+
 RELATION <4EM_Relation>
 	FROM <IS Technical Component - 3> : <IS Technical Component>
 	TO <AND-18503> : <AND>
@@ -243,87 +244,3 @@ RELATION <4EM_Relation>
 Now you have learned the Language for creating models.
 
 Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet:
-
-Technical Components and Relationships
-Information System (TK 1)
-Database System (TK 2)
-E-shop System (TK 3)
-Product Catalog (TK 3.1)
-Ordering System (TK 3.2)
-Customer Advice (TK 3.3)
-Inventory System (TK 6)
-Checkout System (TK 4)
-Customer Profiles Creation (Functional Requirement 3)
-Relationships
-Information System (TK 1)
-
-AND relationships with:
-Database System (TK 2)
-E-shop System (TK 3)
-Inventory System (TK 6)
-Checkout System (TK 4)
-E-shop System (TK 3)
-
-AND relationships with:
-Product Catalog (TK 3.1)
-Ordering System (TK 3.2)
-Customer Advice (TK 3.3)
-Checkout System (TK 4)
-
-supports relationship with:
-Customer Profiles Creation (Functional Requirement 3)
-Functional Requirements
-Customer Profiles Creation (Functional Requirement 3)
-Non-Functional Requirements
-(Assumed for completeness, but not explicitly mentioned in the scenario)
-
-Scalability
-Security
-Usability
-Performance
-Concepts and Binary Relationships
-E-shop System (TK 3)
-
-supports relationship with:
-Ordering System (TK 3.2)
-Database System (TK 2)
-
-supports relationship with:
-Inventory System (TK 6)
-Inventory System (TK 6)
-
-supports relationship with:
-E-shop System (TK 3)
-Product Catalog (TK 3.1)
-
-supports relationship with:
-Ordering System (TK 3.2)
-Ordering System (TK 3.2)
-
-supports relationship with:
-Customer Advice (TK 3.3)
-List of Components
-Information System (TK 1)
-Database System (TK 2)
-E-shop System (TK 3)
-Product Catalog (TK 3.1)
-Ordering System (TK 3.2)
-Customer Advice (TK 3.3)
-Inventory System (TK 6)
-Checkout System (TK 4)
-Customer Profiles Creation (Functional Requirement 3)
-List of Relationships
-TK 1 AND TK 2
-TK 1 AND TK 3
-TK 1 AND TK 6
-TK 1 AND TK 4
-TK 3 AND TK 3.1
-TK 3 AND TK 3.2
-TK 3 AND TK 3.3
-TK 4 supports Functional Requirement 3
-TK 3 supports TK 3.2
-TK 2 supports TK 6
-TK 6 supports TK 3
-TK 3.1 supports TK 3.2
-TK 3.2 supports TK 3.3
-This structured list captures the technical components, their relationships, and the functional requirements of "Accessoires4you" for their e-commerce system.
