@@ -4,6 +4,8 @@ import glob
 import os
 from dotenv import load_dotenv
 from openai import OpenAI 
+from datetime import datetime
+
 
 load_dotenv()
 
@@ -22,12 +24,17 @@ def call_openapi(text):
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": "You are a helpful assistant. Help me with my math homework!"}, # <-- This is the system message that provides context to the model
-            {"role": "user", "content": "Hello! Could you solve 2+2?"}  # <-- This is the user message for which the model will generate a response
+            {"role": "system", "content": "Du bist ein erfahrener Modellierungsexperte der schnell neue Techniken erlernt."}, # <-- This is the system message that provides context to the model
+            {"role": "user", "content": text}  # <-- This is the user message for which the model will generate a response
         ]
     )
-    print("Assistant: " + response.choices[0].message.content)
-    
+    result = response.choices[0].message.content
+    return result
+
+def save_text_file(file_path, content):
+    """Saves the content to a text file."""
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(content)
 
 def main():
     # DAS HIER ALLES ÜBERARBEITEN, SOWIE IN README BESCHRIEBEN @ALEX
@@ -35,14 +42,30 @@ def main():
     files_folder_path = r".\files"
     scenario_content = read_text_file("scenarios/Heat_pump-scenario_simple.txt")
 
-    for file_path in glob.glob(os.path.join(files_folder_path, '**', '*.txt'), recursive=True):
-        print(file_path)
-        file_content = read_text_file(file_path)
+    for folder_path in glob.glob(os.path.join(files_folder_path, '*'), recursive=True):
+        if os.path.isdir(folder_path):
+            txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
+            if len(txt_files) == 2:
+                preprompt = read_text_file(txt_files[0])
+                prompt = read_text_file(txt_files[1])
+                current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        combined_content = scenario_content + "\n" + file_content
-        api_result = call_openapi(combined_content)
+                combined_content = preprompt + "\n" + scenario_content
 
-        concatenated_result = combined_content + "\n" + api_result
+                preprompt_result = call_openapi(combined_content)
+                
+                output_file_path = os.path.join("output",f"{os.path.basename(folder_path)}_{current_time}_preprompt_result.txt")
+                output_file_content = combined_content + "\n" + preprompt_result
+                save_text_file(output_file_path, output_file_content)
+                
+                combined_content = prompt + "\n" + preprompt_result
+                
+                prompt_result = call_openapi(combined_content)
+
+                output_file_path = os.path.join("output",f"{os.path.basename(folder_path)}_{current_time}_prompt_result.txt")
+                output_file_content = combined_content + "\n" + prompt_result
+                save_text_file(output_file_path, output_file_content)
+
         
         sys.exit()  # Beendet das Programm hier.
 
