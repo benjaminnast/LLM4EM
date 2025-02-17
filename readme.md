@@ -22,6 +22,7 @@ The generated .adl files will be saved in the output/models/ folder.
 Textual scenarios should follow a structured format for accurate parsing:
 
 Example:
+
 [Goal] Improve customer satisfaction  
 [Actor] Customer Support Team  
 [Resource] Feedback Form  
