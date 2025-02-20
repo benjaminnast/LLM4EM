@@ -233,7 +233,6 @@ INSTANCE <OR-15209> : <OR>
 
 	ATTRIBUTE <External tool coupling>
 	VALUE ""
-
 //END
 
 
