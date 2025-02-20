@@ -30,6 +30,8 @@ TYPE <Goal Model>
 
 From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
 
+//////////////////////////////////////////////////////////////
+
 This is a example of a Goal Component:
 INSTANCE <Goal - [Individual Name]> : <Goal>
 	ATTRIBUTE <Position>

@@ -22,6 +22,8 @@ Learn the following Syntax for the Technical Component and Requirement Modell Pu
 
 This is a sample of the Header for the code syntax. A header must be displayed before the components:
 
+///////////////////
+
 VERSION <5.1>
 BUSINESS PROCESS MODEL <Technical Components and Requirements Model - new> : <2021_04_22_4EM-Rostock Library_87>
 VERSION <>
@@ -30,6 +32,7 @@ TYPE <Technical Components and Requirements Model>
 From here the Components can be displayed. There are some Components given to learn the syntax of these components. The structure is INSTANCE <Name> : <Type> . 
 
 This is a Syntax Example for the technical Component:
+
 INSTANCE <IS Technical Component - 1> : <IS Technical Component>
 
 	ATTRIBUTE <Position>
@@ -55,6 +58,7 @@ INSTANCE <IS Technical Component - 1> : <IS Technical Component>
 
 	ATTRIBUTE <Attributes>
 	VALUE
+//END
 
 This is a sample of the Requirement Component:
 INSTANCE <IS Requirement - 1> : <IS Requirement>
@@ -79,6 +83,7 @@ INSTANCE <IS Requirement - 1> : <IS Requirement>
 
 	ATTRIBUTE <Attributes>
 	VALUE
+//END
 
 This is a sample of the AND Component:
 INSTANCE <AND-18417> : <AND>
@@ -88,6 +93,7 @@ INSTANCE <AND-18417> : <AND>
 
 	ATTRIBUTE <External tool coupling>
 	VALUE ""
+//END
 
 This is a sample of the OR Component:
 INSTANCE <OR-18420> : <OR>
@@ -97,6 +103,7 @@ INSTANCE <OR-18420> : <OR>
 
 	ATTRIBUTE <External tool coupling>
 	VALUE ""
+//END
 
 These are many Examples for RELATION <4EM_Relation> Components:
 
@@ -112,7 +119,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <IS Requirement - 3> : <IS Requirement>
@@ -126,7 +133,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <AND-18503> : <AND>
@@ -140,7 +147,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <AND-18509> : <AND>
@@ -154,7 +161,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <OR-18512> : <OR>
@@ -168,7 +175,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <OR-18512> : <OR>
@@ -182,7 +189,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <IS Technical Component - 5> : <IS Technical Component>
@@ -196,7 +203,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <IS Technical Component - 5> : <IS Technical Component>
@@ -210,7 +217,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <IS Technical Component - 6> : <IS Technical Component>
@@ -224,7 +231,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 RELATION <4EM_Relation>
 	FROM <IS Requirement - 5> : <IS Requirement>
@@ -238,7 +245,7 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
+//END
 
 
 Now you have learned the Language for creating models.

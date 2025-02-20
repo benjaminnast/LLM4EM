@@ -1,0 +1,126 @@
+Based on the concept model according to the 4EM method, modelling objects are divided into components in order to specify concepts, attributes and relationships. The aim is to achieve a standardized understanding of relevant terms and entities in the model.
+
+Subdivision of the components:
+
+Concept: Represents essential terms or entities.
+Attribute: Describes characteristics of a concept.
+Relationship: Describes the connections between concepts, categorized in “binary” relationships, “ACTUAL_ON” relationships and “PART_OF” relationships.
+
+Create a List of all Components and Relationships for the following Scenario:
+
+Scenario version 1: minimal
+Our company develops and manufactures heat pumps for family homes. The goal of the company is to provide the most energy-efficient heating solution on the market. The problem that hinders reaching this goal is that the energy consumption of the current product version is too high.  
+In the company, the role of the product owner for the heat pump “Smart-Heat” is responsible for the product innovation process and also has the responsibility for reaching the goal of the most energy-efficient heating solution. The product owner is part of the product development department.
+The product innovation process starts with the sub-process of target setting, which receives the customer survey as input information and produces the list of target features as output information. The target feature list is the input for the next sub-process, which is to define the product specification. This sub-process has the specification document as output and is the last step in the innovation process. The product owner performs the target setting and the product specification sub-process.
+The technical components supporting the product innovation process are the production system and the version management system. The version management system supports the production system.
+The “Smart-Heat” product consists of two components: the indoor module and the outdoor module. Smart-Heat has the feature of being energy-efficient.
+Important concepts we have to understand are
+    • Energy-efficiency: is calculated as the energy output for heating divided by the energy consumption
+    • Energy consumption: is measured in kilowatt-hours (kWh) per year
+    • Customer survey: summarizes what expectations the customers have regarding the next version of the company products
+    • Feature: is a characteristic of the product visible for the customer
+    • Target feature: is a feature to be implemented in the next version of the product
+    • Specification document: is defining the functional and non-functional characteristics to be achieved by a product
+
+
+
+Based on the provided scenario, the following list categorizes the components and relationships according to the 4EM method.
+
+### Components
+
+#### Concepts
+1. **Heat Pump**
+   - Definition: A device for heating homes.
+   
+2. **Smart-Heat**
+   - Definition: The specific product name for the heat pump developed by the company.
+
+3. **Energy-Efficiency**
+   - Definition: A measurement of the energy output for heating divided by energy consumption.
+
+4. **Energy Consumption**
+   - Definition: The total energy use of the product, measured in kilowatt-hours (kWh) per year.
+
+5. **Customer Survey**
+   - Definition: A document summarizing customer expectations for the next product version.
+
+6. **Feature**
+   - Definition: A characteristic of the product that is visible to the customer.
+
+7. **Target Feature**
+   - Definition: A feature intended for implementation in the next version of the product.
+
+8. **Specification Document**
+   - Definition: A document defining the functional and non-functional characteristics to be achieved by a product.
+
+9. **Product Owner**
+   - Definition: The individual responsible for product innovation and achieving energy efficiency in product development.
+
+10. **Product Development Department**
+    - Definition: The organizational unit responsible for product innovation and development.
+
+11. **Production System**
+    - Definition: The technical system involved in the manufacturing of the heat pump.
+
+12. **Version Management System**
+    - Definition: The system that supports tracking and managing different versions of the product.
+
+13. **Indoor Module**
+    - Definition: One of the two components of the Smart-Heat product.
+
+14. **Outdoor Module**
+    - Definition: The second component of the Smart-Heat product.
+
+#### Attributes
+1. **Energy Efficiency Rate** 
+   - Attribute of **Energy-Efficiency**.
+
+2. **Annual Energy Consumption**
+   - Attribute of **Energy Consumption**.
+
+3. **Customer Expectations**
+   - Attribute of **Customer Survey**.
+
+4. **Customer Visible Characteristics**
+   - Attribute of **Feature**.
+
+5. **Implementation Status**
+   - Attribute of **Target Feature**.
+
+6. **Functional Characteristics**
+   - Attribute of **Specification Document**.
+
+7. **Non-Functional Characteristics**
+   - Attribute of **Specification Document**.
+
+8. **Role Responsibilities**
+   - Attribute of **Product Owner**.
+
+9. **Department Goals**
+   - Attribute of **Product Development Department**.
+
+#### Relationships
+1. **"ACTUAL_ON" Relationships**
+   - **Smart-Heat ACTUAL_ON Energy-Efficiency**
+   - **Smart-Heat ACTUAL_ON Energy Consumption**
+   - **Smart-Heat ACTUAL_ON Indoor Module**
+   - **Smart-Heat ACTUAL_ON Outdoor Module**
+
+2. **"PART_OF" Relationships**
+   - **Indoor Module PART_OF Smart-Heat**
+   - **Outdoor Module PART_OF Smart-Heat**
+   - **Product Owner PART_OF Product Development Department**
+   - **Target Feature PART_OF Specification Document**
+   - **Specification Document PART_OF Target Setting sub-process**
+   - **Customer Survey PART_OF Target Setting sub-process**
+
+3. **Binary Relationships**
+   - **Product Owner responsible for Target Setting**
+   - **Product Owner responsible for Product Specification**
+   - **Target Setting generates Target Feature List**
+   - **Target Feature List input for Product Specification**
+   - **Specification Document output of Product Specification**
+   - **Production System supported by Version Management System**
+   - **Customer Survey provides input for Target Setting**
+
+This structured approach ensures a clear understanding of the concepts, their attributes, and how they relate to each other within the context of the heat pump development scenario.

@@ -1,0 +1,390 @@
+Here is the structured Technical Component and Requirement Model (TKAM) for the provided scenario, presented in the specified syntax:
+
+```plaintext
+VERSION <5.1>
+BUSINESS PROCESS MODEL <Technical Components and Requirements Model - new> : <2021_04_22_SmartHeat_89>
+VERSION <>
+TYPE <Technical Components and Requirements Model>
+
+INSTANCE <IS Requirement - 1> : <IS Requirement>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:2.5cm w:4cm h:2cm index:1"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "High energy efficiency"
+    
+    ATTRIBUTE <Type>
+    VALUE "Functional"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Requirement - 2> : <IS Requirement>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:5cm w:4cm h:2cm index:2"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Customer expectations based on survey results"
+    
+    ATTRIBUTE <Type>
+    VALUE "Functional"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Requirement - 3> : <IS Requirement>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:7cm w:4cm h:2cm index:3"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Minimization of energy consumption (measured in kWh/year)"
+    
+    ATTRIBUTE <Type>
+    VALUE "Non-Functional"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Requirement - 4> : <IS Requirement>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:9cm w:4cm h:2cm index:4"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Ease of maintenance for the indoor and outdoor modules"
+    
+    ATTRIBUTE <Type>
+    VALUE "Non-Functional"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Technical Component - 1> : <IS Technical Component>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:10cm y:2.5cm w:4cm h:2cm index:5"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Smart-Heat Product"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE "Indoor Module, Outdoor Module"
+    
+    ATTRIBUTE <Location>
+    VALUE ""
+    
+    ATTRIBUTE <Quantity>
+    VALUE 1
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Technical Component - 2> : <IS Technical Component>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:10cm y:5cm w:4cm h:2cm index:6"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Indoor Module for Smart-Heat"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Location>
+    VALUE ""
+    
+    ATTRIBUTE <Quantity>
+    VALUE 1
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Technical Component - 3> : <IS Technical Component>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:10cm y:7.5cm w:4cm h:2cm index:7"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Outdoor Module for Smart-Heat"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Location>
+    VALUE ""
+    
+    ATTRIBUTE <Quantity>
+    VALUE 1
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Technical Component - 4> : <IS Technical Component>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:12.5cm y:2.5cm w:4cm h:2cm index:8"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Production System"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Location>
+    VALUE ""
+    
+    ATTRIBUTE <Quantity>
+    VALUE 1
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Technical Component - 5> : <IS Technical Component>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:12.5cm y:5cm w:4cm h:2cm index:9"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Version Management System"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Location>
+    VALUE ""
+    
+    ATTRIBUTE <Quantity>
+    VALUE 1
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Process - 1> : <IS Process>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:15cm y:2.5cm w:6cm h:2cm index:10"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Target Setting"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Process - 2> : <IS Process>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:15cm y:5cm w:6cm h:2cm index:11"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Product Specification"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Concept - 1> : <IS Concept>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:12cm w:4cm h:2cm index:12"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Energy-Efficiency"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+INSTANCE <IS Concept - 2> : <IS Concept>
+    ATTRIBUTE <Position>
+    VALUE "NODE x:2.5cm y:14cm w:4cm h:2cm index:13"
+    
+    ATTRIBUTE <External tool coupling>
+    VALUE ""
+    
+    ATTRIBUTE <Description>
+    VALUE "Customer Survey"
+    
+    ATTRIBUTE <Intermodel-Relations>
+    VALUE ""
+    
+    ATTRIBUTE <Decomposition>
+    VALUE ""
+    
+    ATTRIBUTE <Attributes>
+    VALUE ""
+
+RELATION <4EM_Relation>
+    FROM <IS Requirement - 3> : <IS Requirement>
+    TO <IS Requirement - 1> : <IS Requirement>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:14"
+    
+    ATTRIBUTE <Type>
+    VALUE "Hinders"
+    
+    ATTRIBUTE <Description>
+    VALUE "High energy consumption hinders achieving the goal of energy efficiency."
+
+RELATION <4EM_Relation>
+    FROM <IS Requirement - 2> : <IS Requirement>
+    TO <IS Technical Component - 5> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:15"
+    
+    ATTRIBUTE <Type>
+    VALUE "Supports"
+    
+    ATTRIBUTE <Description>
+    VALUE "Customer expectations support the identification of target features."
+
+RELATION <4EM_Relation>
+    FROM <IS Technical Component - 1> : <IS Technical Component>
+    TO <IS Technical Component - 2> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:16"
+    
+    ATTRIBUTE <Type>
+    VALUE "AND"
+    
+    ATTRIBUTE <Description>
+    VALUE "Indoor Module AND Outdoor Module required for Smart-Heat."
+
+RELATION <4EM_Relation>
+    FROM <IS Technical Component - 1> : <IS Technical Component>
+    TO <IS Technical Component - 3> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:17"
+    
+    ATTRIBUTE <Type>
+    VALUE "AND"
+    
+    ATTRIBUTE <Description>
+    VALUE "Same AND relationship for Outdoor Module."
+
+RELATION <4EM_Relation>
+    FROM <IS Technical Component - 5> : <IS Technical Component>
+    TO <IS Technical Component - 4> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:18"
+    
+    ATTRIBUTE <Type>
+    VALUE "Supports"
+    
+    ATTRIBUTE <Description>
+    VALUE "Version Management System supports the Production System."
+
+RELATION <4EM_Relation>
+    FROM <IS Process - 1> : <IS Process>
+    TO <IS Technical Component - 5> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:19"
+    
+    ATTRIBUTE <Type>
+    VALUE "Produces"
+    
+    ATTRIBUTE <Description>
+    VALUE "Target Setting produces Target Feature List."
+
+RELATION <4EM_Relation>
+    FROM <IS Technical Component - 2> : <IS Technical Component>
+    TO <IS Technical Component - 3> : <IS Technical Component>
+    
+    ATTRIBUTE <Positions>
+    VALUE "EDGE 0 index:20"
+    
+    ATTRIBUTE <Type>
+    VALUE "Hinders"
+    
+    ATTRIBUTE <Description>
+    VALUE "High energy consumption of modules hinders energy efficiency."
+```
+
+This model captures the detailed relationships between functional and non-functional requirements, technical components, concepts, and processes involved in developing the Smart-Heat product, reflecting their interactions and dependencies in creating an energy-efficient solution.
