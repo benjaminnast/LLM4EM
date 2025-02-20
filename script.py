@@ -52,7 +52,7 @@ def call_openapi(text):
     return response.choices[0].message.content
 
 
-def process_scenario(folder_path, scenario_content, current_time, scenario_file):
+def process_scenario(folder_path, scenario_content, scenario_file, iteration):
     """Processes a scenario with preprompt and prompt, saves results in appropriate folders."""
     txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
     if len(txt_files) != 2:
@@ -68,7 +68,7 @@ def process_scenario(folder_path, scenario_content, current_time, scenario_file)
 
     preprompt_output_file = os.path.join(
         PREPROMPT_FOLDER,
-        f"{os.path.basename(folder_path)}_{current_time}_preprompt_result.txt"
+        f"{os.path.basename(folder_path)}_{iteration}_preprompt_result.txt"
     )
     save_text_file(preprompt_output_file, combined_preprompt + "\n" + preprompt_result)
 
@@ -89,20 +89,21 @@ def process_scenario(folder_path, scenario_content, current_time, scenario_file)
 
     print(f"Results saved for {os.path.basename(folder_path)} under scenario.")
 
-
-def main():
+def run_scenario(iteration):
     """Main function to read scenarios, process files, and save outputs."""
-    current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     for scenario_file in os.listdir(SCENARIOS_FOLDER):
         scenario_content = read_text_file(os.path.join(SCENARIOS_FOLDER, scenario_file))
 
         for folder_path in glob.glob(os.path.join(FILES_FOLDER_PATH, '*')):
             if os.path.isdir(folder_path):
-                process_scenario(folder_path, scenario_content, current_time, scenario_file)
+                process_scenario(folder_path, scenario_content, scenario_file, iteration)
 
     print("Processing complete.")
 
+def main():
+    for i in range(2):
+        run_scenario(i)
 
 if __name__ == "__main__":
     main()
