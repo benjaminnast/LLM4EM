@@ -228,7 +228,6 @@ RELATION <4EM_Relation>
 
 	ATTRIBUTE <Description>
 	VALUE ""
-
 //END
 
 Now you have learned the Language for creating models.
