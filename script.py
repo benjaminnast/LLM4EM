@@ -12,7 +12,7 @@ import postprocess as postprocess
 # Load environment variables
 load_dotenv(".env")
 
-API_KEY = os.getenv("OPENAI_API_KEY") 
+API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL = "gpt-4o-mini"
 FILES_FOLDER_PATH = r".\files"
 SCENARIOS_FOLDER = "./scenarios"
@@ -81,7 +81,7 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
 
     prompt_output_file = os.path.join(
         GENERATED_MODEL_FOLDER,
-        f"{os.path.basename(folder_path)}_{scenario_file}_{current_time}_.adl"
+        f"{os.path.basename(folder_path)}_{scenario_file}_{iteration}.adl"
         # FIXME: ZEIT KANN GEGEN NUMMERIERUNG AUSGETAUSCHT WERDEN!
     )
 
