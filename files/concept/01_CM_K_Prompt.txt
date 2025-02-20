@@ -24,6 +24,8 @@ PART_OF Relationship: The PART_OF relationship defines the composition of a conc
 
 This is the Syntax of some elements of a sample model. Learn this syntax:
 
+This is a sample of the Header for the code syntax. A header must be displayed before the components:
+
 //////////////////////////////////////////////////////////////
 
 VERSION <5.1>
@@ -160,7 +162,6 @@ RELATION <4EM_Relation>
 
 //END
 
-This i an Example of a 1:n Relation:
 
 RELATION <4EM_Relation>
 	FROM <Concept - 1> : <Concept>
