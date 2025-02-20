@@ -8,6 +8,8 @@ def clean_code_text(prompt_result):
     for i, line in enumerate(lines):
         if line.strip().startswith('///////////') and start_idx is None:
             start_idx = i
+        elif line.strip().startswith('```') and start_idx is None:
+            start_idx = i + 1
         if line.strip().startswith('//END'):
             end_idx = i
 
@@ -24,4 +26,3 @@ def clean_code_text(prompt_result):
 
     # Return the cleaned text
     return '\n'.join(trimmed_lines)
-
