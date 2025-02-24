@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from datetime import datetime
 import postprocess as postprocess
-
+from env import OPENAI_API_KEY
 
 # Load environment variables
 load_dotenv(".env")
 
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = OPENAI_API_KEY
 MODEL = "gpt-4o-mini"
 FILES_FOLDER_PATH = r".\files"
 SCENARIOS_FOLDER = "./scenarios"
