@@ -91,13 +91,17 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
 
 def run_scenario(iteration):
     """Main function to read scenarios, process files, and save outputs."""
-
-    for scenario_file in os.listdir(SCENARIOS_FOLDER):
+    scenario_files = sorted(os.listdir(SCENARIOS_FOLDER))
+    folder_paths = sorted(glob.glob(os.path.join(FILES_FOLDER_PATH, '*')))
+    
+    for scenario_file in scenario_files:
         scenario_content = read_text_file(os.path.join(SCENARIOS_FOLDER, scenario_file))
 
-        for folder_path in glob.glob(os.path.join(FILES_FOLDER_PATH, '*')):
-            if os.path.isdir(folder_path):
-                process_scenario(folder_path, scenario_content, scenario_file, iteration)
+        for folder_path in folder_paths:
+            folder_name = os.path.basename(folder_path)
+            if folder_name in scenario_file:
+                if os.path.isdir(folder_path):
+                    process_scenario(folder_path, scenario_content, scenario_file, iteration)
 
     print("Processing complete.")
 
