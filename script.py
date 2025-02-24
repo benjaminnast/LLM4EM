@@ -106,7 +106,7 @@ def run_scenario(iteration):
     print("Processing complete.")
 
 def main():
-    for i in range(2):
+    for i in range(3):
         run_scenario(i)
 
 if __name__ == "__main__":

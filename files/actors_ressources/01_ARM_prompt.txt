@@ -298,8 +298,7 @@ RELATION <4EM_Relation>
 	VALUE ""
 //END
 
-
+Each Component should be connected with a Relation.
 Now you learned the Language for creating models.
-
 
 Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet ONLY WRITE CODE, NO COMMENTARY:

@@ -247,6 +247,7 @@ RELATION <4EM_Relation>
 	VALUE ""
 //END
 
+Each Component should be connected with a Relation.
 
 Now you have learned the Language for creating models.
 
