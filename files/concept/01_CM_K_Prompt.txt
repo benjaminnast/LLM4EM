@@ -211,11 +211,7 @@ RELATION <4EM_Relation>
 	VALUE ""
 //END
 
-
-
-
-
 Now you have learned the Language for creating models.
 
 
-Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet:
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet ONLY WRITE CODE, NO COMMENTARY:

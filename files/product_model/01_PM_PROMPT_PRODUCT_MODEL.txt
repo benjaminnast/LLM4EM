@@ -765,5 +765,5 @@ RELATION <4EM_Relation>
 
 Now you have learned the Language for creating models.
 
-Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario:
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario ONLY WRITE CODE, NO COMMENTARY:
 
