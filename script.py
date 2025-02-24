@@ -68,7 +68,7 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
 
     preprompt_output_file = os.path.join(
         PREPROMPT_FOLDER,
-        f"{os.path.basename(folder_path)}_{iteration}_preprompt_result.txt"
+        f"{scenario_file}_{iteration}_preprompt_result.txt"
     )
     save_text_file(preprompt_output_file, combined_preprompt + "\n" + preprompt_result)
 
@@ -81,7 +81,7 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
 
     prompt_output_file = os.path.join(
         GENERATED_MODEL_FOLDER,
-        f"{os.path.basename(folder_path)}_{scenario_file}_{iteration}.adl"
+        f"{scenario_file}_{iteration}.adl"
         # FIXME: ZEIT KANN GEGEN NUMMERIERUNG AUSGETAUSCHT WERDEN!
     )
 
