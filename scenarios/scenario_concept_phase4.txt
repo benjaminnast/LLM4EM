@@ -1,4 +1,3 @@
-
 Important concepts we have to understand are
     • Energy-efficiency: is calculated as the energy output for heating divided by the energy consumption
     • Energy consumption: is measured in kilowatt-hours (kWh) per year
