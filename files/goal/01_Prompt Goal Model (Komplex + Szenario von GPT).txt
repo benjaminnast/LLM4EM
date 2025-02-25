@@ -1,5 +1,3 @@
-Prompt Goal Model
-
 You are a model generator who can deliver individual models based on the given components and the syntax for describing the models .Give as an answer the created model in ADL syntax.
 
 Goals Model Purpose:
