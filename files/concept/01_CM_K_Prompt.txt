@@ -1,24 +1,21 @@
 You are a model generator who can deliver individual models based on the given components and the syntax for describing the models. Give as an answer the created model in ADL syntax. 
 
-
 Concept Model purpose:
 
--To specify concepts, terms, and entities used across various submodels but not defined within them.
+- To specify concepts, terms, and entities used across various submodels but not defined within them.
 - To ensure a uniform understanding and usage of these concepts, terms, and entities across different submodels.
 - To describe technical terms, input and output information of processes, and processed materials relevant to the modeling purpose.
 - To include both physical objects (e.g., products) and intangible concepts (e.g., quality) necessary for understanding information and material flows in business processes.
 - To provide a consistent definition for concepts used by all modeling participants and stakeholders, akin to a glossary for the elements of a business model.
 
-
 Components: 
-Concept: Concepts within the business rule model encapsulate the essence of terms or entities essential for modeling purposes, representing pertinent information.
-Attribute: Attributes characterize the properties of a concept, describing its qualities comprehensively within the context of the model.
-Normal Relationships: These connections facilitate linking two or more distinct elements within the model. For instance, a relationship may connect a concept with an attribute, establishing their interdependence.
-Binary Relationships: This type of relationship exists exclusively between two concepts, defined by a designated connection name. Binary relationships are inherently bidirectional, featuring a primary direction indicated by an arrow, with the inverse direction also specified. They are categorized into three types: 1:1, 1:n, m:n
-IS_A Relationship: This relationship signifies specialization or generalization between concepts. In this structure, <B> represents the broader concept while <A> is its specialized counterpart, inheriting attributes, values, and integrity constraints.
-PART_OF Relationship: The PART_OF relationship defines the composition of a concept within other concepts. Here, <B> encompasses both <A> and <C>, refining them within its aggregation. This relationship, also known as aggregation or composition, outlines hierarchical levels of refinement.
 
-
+- Concept: Concepts within the business rule model encapsulate the essence of terms or entities essential for modeling purposes, representing pertinent information.
+- Attribute: Attributes characterize the properties of a concept, describing its qualities comprehensively within the context of the model.
+- Normal Relationships: These connections facilitate linking two or more distinct elements within the model. For instance, a relationship may connect a concept with an attribute, establishing their interdependence.
+- Binary Relationships: This type of relationship exists exclusively between two concepts, defined by a designated connection name. Binary relationships are inherently bidirectional, featuring a primary direction indicated by an arrow, with the inverse direction also specified. They are categorized into three types: 1:1, 1:n, m:n
+- IS_A Relationship: This relationship signifies specialization or generalization between concepts. In this structure, <B> represents the broader concept while <A> is its specialized counterpart, inheriting attributes, values, and integrity constraints.
+- PART_OF Relationship: The PART_OF relationship defines the composition of a concept within other concepts. Here, <B> encompasses both <A> and <C>, refining them within its aggregation. This relationship, also known as aggregation or composition, outlines hierarchical levels of refinement.
 
 This is the Syntax of some elements of a sample model. Learn this syntax:
 
@@ -35,9 +32,9 @@ TYPE <Concepts Model>
 
 From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
 
-This is an Example of an Concept Component:
+This is an Example of a Concept Component:
 
- INSTANCE <Concept - 1> : <Concept>
+ INSTANCE <Name of Concept - 1> : <Concept> 
 
 	ATTRIBUTE <Position>
 	VALUE "NODE x:5cm y:3cm w:5cm h:1.8cm index:1"
@@ -67,7 +64,7 @@ This is an Example of an Concept Component:
 
 This is an Example of a Attribute Component:
 
-INSTANCE <Attribute - 1> : <Attribute>
+INSTANCE <Name of Attribute - 1> : <Attribute>
 
 	ATTRIBUTE <Position>
 	VALUE "NODE x:7cm y:9cm w:5cm h:1.2cm index:2"
@@ -146,7 +143,7 @@ INSTANCE <Total-PartOF-15350> : <Total-PartOF>
 These are many Examples for RELATION <4EM_Relation> Components:
 
 RELATION <4EM_Relation>
-	FROM <Attribute - 1> : <Attribute>
+	FROM <Name of Attribute - 1> : <Attribute>
 	TO <Partial-PartOF-15326> : <Partial-PartOF>
 
 	ATTRIBUTE <Positions>
@@ -162,8 +159,8 @@ RELATION <4EM_Relation>
 
 
 RELATION <4EM_Relation>
-	FROM <Concept - 1> : <Concept>
-	TO <Concept - 4> : <Concept>
+	FROM <Name of Concept - 1> : <Concept>
+	TO <Name of Concept - 4> : <Concept>
 
 	ATTRIBUTE <Positions>
 	VALUE "EDGE 0 index:29"
@@ -179,8 +176,8 @@ RELATION <4EM_Relation>
 This is a Example of a 1:1 Relation: 
 
 RELATION <4EM_Relation>
-	FROM <Concept - 2> : <Concept>
-	TO <Concept - 1> : <Concept>
+	FROM <Name of Concept - 2> : <Concept>
+	TO <Name of Concept - 1> : <Concept>
 
 	ATTRIBUTE <Positions>
 	VALUE "EDGE 0 index:30"
@@ -196,8 +193,8 @@ RELATION <4EM_Relation>
 This is a Example of a n:m Relation: 
 
 RELATION <4EM_Relation>
-	FROM <Concept - 3> : <Concept>
-	TO <Concept - 2> : <Concept>
+	FROM <Name of Concept - 3> : <Concept>
+	TO <Name of Concept - 2> : <Concept>
 
 	ATTRIBUTE <Positions>
 	VALUE "EDGE 0 index:31"
