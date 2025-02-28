@@ -13,7 +13,7 @@ from env import OPENAI_API_KEY
 load_dotenv(".env")
 
 API_KEY = OPENAI_API_KEY
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4o"
 FILES_FOLDER_PATH = r".\files"
 SCENARIOS_FOLDER = "./scenarios"
 OUTPUT_FOLDER = "output"
@@ -81,7 +81,7 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
 
     prompt_output_file = os.path.join(
         GENERATED_MODEL_FOLDER,
-        f"{scenario_file}_{iteration}.adl"
+        f"{MODEL}_{scenario_file}_{iteration}.adl"
         # FIXME: ZEIT KANN GEGEN NUMMERIERUNG AUSGETAUSCHT WERDEN!
     )
 
