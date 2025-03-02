@@ -42,12 +42,36 @@ def save_text_file(file_path, content):
 
 def call_openapi(text):
     """Calls the OpenAI API with the provided text."""
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
+    messages=[
+        [
+            {
+            "role": "assistant",
+            "content": [
+                {
+                "type": "text",
+                "text": "Du bist ein erfahrener Modellierungsexperte der schnell neue Techniken erlernt."
+                }
+            ]
+            },
+            {
+            "role": "user",
+            "content": [
+                {
+                "type": "text",
+                "text": text
+                }
+            ]
+            }
+        ],
+        [           
             {"role": "system", "content": "Du bist ein erfahrener Modellierungsexperte der schnell neue Techniken erlernt."},
             {"role": "user", "content": text}
         ]
+    ]
+    
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=messages[1]
     )
     return response.choices[0].message.content
 
