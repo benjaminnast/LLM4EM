@@ -13,7 +13,7 @@ from env import OPENAI_API_KEY
 load_dotenv(".env")
 
 API_KEY = OPENAI_API_KEY
-MODEL = "gpt-4o"
+MODEL = "o1"
 FILES_FOLDER_PATH = r".\files"
 SCENARIOS_FOLDER = "./scenarios"
 OUTPUT_FOLDER = "output"
@@ -71,12 +71,25 @@ def call_openapi(text):
     
     response = client.chat.completions.create(
         model=MODEL,
-        messages=messages[1]
+        messages=messages[0]
     )
     return response.choices[0].message.content
 
 
 def process_scenario(folder_path, scenario_content, scenario_file, iteration):
+
+    scenario_file = scenario_file.replace(".txt", "")
+
+    prompt_output_file = os.path.join(
+        GENERATED_MODEL_FOLDER,
+        f"{MODEL}_{scenario_file}_{iteration}.adl"
+        # FIXME: ZEIT KANN GEGEN NUMMERIERUNG AUSGETAUSCHT WERDEN!
+    )
+
+    if os.path.exists(prompt_output_file):
+        print(f"File {prompt_output_file} already exists. Skipping.")
+        return
+
     """Processes a scenario with preprompt and prompt, saves results in appropriate folders."""
     txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
     if len(txt_files) != 2:
@@ -101,13 +114,8 @@ def process_scenario(folder_path, scenario_content, scenario_file, iteration):
     prompt_result = call_openapi(combined_prompt)
     prompt_result = postprocess.clean_code_text(prompt_result)
 
-    scenario_file = scenario_file.replace(".txt", "")
+    
 
-    prompt_output_file = os.path.join(
-        GENERATED_MODEL_FOLDER,
-        f"{MODEL}_{scenario_file}_{iteration}.adl"
-        # FIXME: ZEIT KANN GEGEN NUMMERIERUNG AUSGETAUSCHT WERDEN!
-    )
 
     save_text_file(prompt_output_file, prompt_result)
 
@@ -123,7 +131,7 @@ def run_scenario(iteration):
 
         for folder_path in folder_paths:
             folder_name = os.path.basename(folder_path)
-            if folder_name in scenario_file:
+            if folder_name in scenario_file and "kw_" in scenario_file: # not ("tangled_" in scenario_file or "kw_" in scenario_file):
                 if os.path.isdir(folder_path):
                     process_scenario(folder_path, scenario_content, scenario_file, iteration)
 
