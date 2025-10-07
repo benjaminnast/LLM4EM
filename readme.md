@@ -23,11 +23,11 @@ Textual scenarios should refer to the selected perspective for accurate parsing.
 
 Examples:
 
-[Goal] Improve Customer Satisfaction
-[Problem] Dissatisfaction with the Service
-[Information Set] Customer Survey Data
-[Actor] Customer Support Team
-[Resource] Feedback Form
+[Goal] Improve Customer Satisfaction  
+[Problem] Dissatisfaction with the Service  
+[Information Set] Customer Survey Data  
+[Actor] Customer Support Team  
+[Resource] Feedback Form  
 [Process] Collect Customer Feedback
 
 ## 🤝 Currently Supported 4EM Perspectives/Model Types:
