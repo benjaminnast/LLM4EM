@@ -36,9 +36,9 @@ Examples:
 ## 🤝 Currently Supported 4EM Perspectives/Model Types
 - Goals Model (GM)
 - Actors and Resources Model (ARM)
-- Process Model (PM)
-- Technical Components Model (TC)
-- Products and Services Model (PS)
+- Business Process Model (BPM)
+- Technical Components and Requirements Model (TRM)
+- Products and Services Model (PM)
 - Concepts Model (CM)
 
 ## 📤 Output Format
