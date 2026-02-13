@@ -16,6 +16,7 @@ The resulting models are exported in `ADL` file format, which can be directly im
 > Adjust the `script.py` file as needed for the desired LLM/API
 
 Use the example textual scenario files (.txt) or place your own into the `scenarios/` folder
+(descriptions must be provided separately, or combined in a tangled scenario)
 
 Run the pipeline: python src/script.py
 
