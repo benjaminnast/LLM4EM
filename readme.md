@@ -47,3 +47,7 @@ The output `ADL` files conform to the 4EM Modeling Toolkit standard in XML Synta
 ## ⚙️ Process of Model Generation
 
 ![alt text](https://github.com/benjaminnast/LLM4EM/blob/main/files/Toolchain.png)
+
+## 📊 Application and Evaluation
+First experiments and results using the LLM4EM Toolchain can be found [here](https://link.springer.com/chapter/10.1007/978-3-031-77908-4_8).
+The full dataset can be found [here](https://zenodo.org/records/17360226).
