@@ -1,6 +1,6 @@
 # LLM4EM
 
-The LLM4EM Pipeline is a tool that processes textual scenario descriptions to automatically generate For Enterprise Modeling (4EM) models. 
+The LLM4EM Toolchain processes textual scenario descriptions to automatically generate For Enterprise Modeling (4EM) models. 
 The resulting models are exported in `ADL` file format, which can be directly imported into the [4EM Modeling Toolkit](https://www.omilab.org/activities/projects/details/?id=86). 
 
 
